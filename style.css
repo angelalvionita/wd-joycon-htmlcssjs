@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.controls {
+    display: inline-grid;
+    grid-column-gap: 0;
+    align-self: end;
+}
+
+.movements_control {
+    border: solid 1px black;
+    margin: 0;
+    padding: 0;
+}
+
+.view {
+    display: block;
+    text-align: center;
+    padding: 20px 50px;
+    background-color: pink;
+}
+
+.action {
+    text-align: center;
+}
+
+#keyboard_key_up {
+    position: absolute;
+    right: 300px;
+    bottom: 500px;
+    border-style: solid;
+    border-color: black;
+    background: white;
+}
+
+#keyboard_key_left {
+    position: absolute;
+    right: 400px;
+    bottom: 450px;
+    border-style: solid;
+    border-color: black;
+    background: white;
+}
+
+#keyboard_key_right {
+    position: absolute;
+    right: 200px;
+    bottom: 450px;
+    border-style: solid;
+    border-color: black;
+    background: white;
+}
+
+#keyboard_key_down {
+    position: absolute;
+    right: 300px;
+    bottom: 400px;
+    border-style: solid;
+    border-color: black;
+    background: white;
+}
+
+#
+.flex-parent {
+    display: flex;
+}
+
+.jc-centers {
+    justify-content: center;
+}
+
+button.margin-right {
+    margin-right: 20px;
+}
+
+.actions_control {
+ position: relative;
+}

@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JoyCon</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<style>
+canvas {
+    border:1px solid #d3d3d3;
+    background-color: #f1f1f1;
+}
+</style>
+
+<body onload="getSelection">
     <!-- buat komponen yang menggambarkan controller @MUTAMA -->
     <!--    [^]                -->
     <!-- [<][v][>]      [B][A] -->
@@ -43,5 +52,27 @@
     <!--  -->
     <!-- kamu boleh menambahkan sprite di samping textscreen yang sudah ada @POINPLUS -->
     <!-- di ujung kanan bawah, tambahkan informasi NIM, nama, dan link Github @UTAMA -->
+    <div clas="container">
+        <div class="view">
+            <textarea name="tampilan" id="tampilan" cols="30" rows="2">
+            </textarea>
+        </div>
+
+        <div class="button">
+            <div class="controls">
+                <button onclick="moveup()" id="keyboard_key_up"> UP </button>
+                <button onclick="moveleft()" id="keyboard_key_left"> LEFT </button>
+                <button onclick="movedown()" id="keyboard_key_down"> DOWN </button>
+                <button onclick="moveright()" id="keyboard_key_right"> RIGHT </button>
+            </div>
+
+            <div class="flex-parent jc-centers">
+                <button type="submit" class="actions_control">B</button>
+                <button type="submit" class="actions_control"> A </button>
+            </div>
+        </div>
+    </div>
+
 </body>
+
 </html>
